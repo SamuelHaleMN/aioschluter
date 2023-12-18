@@ -122,6 +122,11 @@ class SchluterApi:
                 resp.status,
             )
             data = await resp.json()
+            _LOGGER.debug(
+                "MOD Data retrieved from %s, status: %s",
+                API_GET_THERMOSTATS_URL,
+                data,
+            )
         return self._extract_thermostats_from_data(data)
 
     async def async_set_temperature(self, sessionid, serialnumber, temperature) -> bool:
