@@ -18,7 +18,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    url="https://github.com/IngoS11/aioschluter",
+    url="https://github.com/SamuelHaleMN/aioschluter",
     license="MIT License",
     packages=find_packages(exclude=["tests"]),
     package_data={"nettigo_air_monitor": ["py.typed"]},
